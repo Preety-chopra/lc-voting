@@ -37,11 +37,13 @@
                     <button class="w-20 bg-gray-200 border border-gray-200 hover:border-gray-400 font-bold text-xxs uppercase rounded-xl transition duration-150 ease-in px-4 py-3">Vote</button>
                 </div>
            </div>
-           <div class="flex px-2 py-8">
-                <a href="#" class="flex-none">
-                    <img src="https://www.facebeautyscience.com/wp-content/uploads/2020/04/face-beauty-skin-face2-proc.jpg" alt="avatar" class="w-10 h-10 rounded-xl">
-                </a>
-                <div class="mx-4">
+           <div class="flex flex-1 px-2 py-8">
+                <div class="flex-none">
+                    <a href="#" >
+                        <img src="https://www.facebeautyscience.com/wp-content/uploads/2020/04/face-beauty-skin-face2-proc.jpg" alt="avatar" class="w-10 h-10 rounded-xl">
+                    </a>
+                </div>
+                <div class="w-full mx-4">
                     <h4 class="text-xl font-semibold">
                         <a href="#" class="hover:underline">A random title can go here</a>
                     </h4>

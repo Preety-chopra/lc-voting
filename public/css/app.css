@@ -659,6 +659,10 @@ select {
   margin-left: 1rem;
   margin-right: 1rem;
 }
+.my-8 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
 .ml-3 {
   margin-left: 0.75rem;
 }
@@ -713,14 +717,14 @@ select {
 .mt-16 {
   margin-top: 4rem;
 }
-.-mr-2 {
-  margin-right: -0.5rem;
-}
-.mr-1 {
-  margin-right: 0.25rem;
-}
 .ml-6 {
   margin-left: 1.5rem;
+}
+.ml-22 {
+  margin-left: 5.5rem;
+}
+.-mr-2 {
+  margin-right: -0.5rem;
 }
 .block {
   display: block;
@@ -812,17 +816,17 @@ select {
 .w-175 {
   width: 43.75rem;
 }
-.w-48 {
-  width: 12rem;
-}
-.w-6 {
-  width: 1.5rem;
-}
 .w-32 {
   width: 8rem;
 }
 .w-36 {
   width: 9rem;
+}
+.w-48 {
+  width: 12rem;
+}
+.w-6 {
+  width: 1.5rem;
 }
 .max-w-6xl {
   max-width: 72rem;
@@ -1121,6 +1125,9 @@ select {
 .pb-3 {
   padding-bottom: 0.75rem;
 }
+.pt-4 {
+  padding-top: 1rem;
+}
 .pt-1 {
   padding-top: 0.25rem;
 }
@@ -1132,9 +1139,6 @@ select {
 }
 .pt-2 {
   padding-top: 0.5rem;
-}
-.pt-4 {
-  padding-top: 1rem;
 }
 .pb-1 {
   padding-bottom: 0.25rem;
@@ -1197,6 +1201,9 @@ select {
 .leading-none {
   line-height: 1;
 }
+.leading-snug {
+  line-height: 1.375;
+}
 .leading-tight {
   line-height: 1.25;
 }
@@ -1238,6 +1245,10 @@ select {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+.text-blue {
+  --tw-text-opacity: 1;
+  color: rgb(50 138 241 / var(--tw-text-opacity));
 }
 .text-gray-800 {
   --tw-text-opacity: 1;
@@ -1344,6 +1355,50 @@ select {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
+}
+/* vertical line to the left of comments */
+.comments-container::before {
+    background: #edf0f5;
+    content: "";
+    display: block;
+    height: 100%;
+    left: -50px;
+    /**opacity: .07; **/
+    position:  absolute;
+    top: 0;
+    width: 3px;
+}
+.comment-container::before {
+    background: #edf0f5;
+    content: "";
+    display: block;
+    height: 3px;
+    left: -50px;
+    /**opacity: .07; **/
+    position:  absolute;
+    top: 57px;
+    width: 23px;
+}
+.comment-container:last-child::after {
+    background: #f7f8fc;
+    content: "";
+    display: block;
+    height: calc(100% - 60px);
+    left: -50px;
+    position: absolute;
+    top: 60px;
+    width: 3px;
+}
+.is-admin::before {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 38px;
+    border: 7px solid white;
+    box-shadow: 4px 4px 15px 0 rgba(36, 37, 38, 0.08);
+    left: -61px;
+    background: #8b60ed;
+    opacity: 1;
 }
 .hover\:border-gray-400:hover {
   --tw-border-opacity: 1;
